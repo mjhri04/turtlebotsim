@@ -1,0 +1,15 @@
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/ament_index/resource_index/package_run_dependencies/turtlebot3_robotis
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/ament_index/resource_index/parent_prefix_path/turtlebot3_robotis
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/environment/ament_prefix_path.sh
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/environment/ament_prefix_path.dsv
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/environment/path.sh
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/environment/path.dsv
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/local_setup.bash
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/local_setup.sh
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/local_setup.zsh
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/local_setup.dsv
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/package.dsv
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/ament_index/resource_index/packages/turtlebot3_robotis
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/cmake/turtlebot3_robotisConfig.cmake
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/cmake/turtlebot3_robotisConfig-version.cmake
+/home/ju/turtlebotsim/install/turtlebot3_robotis/share/turtlebot3_robotis/package.xml

@@ -1,0 +1,72 @@
+[0.320s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ju/turtlebotsim/src/turtlebot3 -DCMAKE_INSTALL_PREFIX=/home/ju/turtlebotsim/install/turtlebot3
+[0.357s] -- The C compiler identification is GNU 11.4.0
+[0.398s] -- The CXX compiler identification is GNU 11.4.0
+[0.403s] -- Detecting C compiler ABI info
+[0.445s] -- Detecting C compiler ABI info - done
+[0.452s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.452s] -- Detecting C compile features
+[0.453s] -- Detecting C compile features - done
+[0.456s] -- Detecting CXX compiler ABI info
+[0.514s] -- Detecting CXX compiler ABI info - done
+[0.518s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.518s] -- Detecting CXX compile features
+[0.518s] -- Detecting CXX compile features - done
+[0.520s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.624s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.676s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.727s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.727s] -- Added test 'lint_cmake' to check CMake code style
+[0.728s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.728s] -- Added test 'xmllint' to check XML markup files
+[0.729s] -- Configuring done
+[0.730s] -- Generating done
+[0.731s] -- Build files have been written to: /home/ju/turtlebotsim/build/turtlebot3
+[0.734s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ju/turtlebotsim/src/turtlebot3 -DCMAKE_INSTALL_PREFIX=/home/ju/turtlebotsim/install/turtlebot3
+[0.734s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
+[0.767s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
+[0.785s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ju/turtlebotsim/build/turtlebot3
+[0.791s] -- Install configuration: ""
+[0.792s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch
+[0.792s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/ros_ign_bridge.launch.py
+[0.792s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/navigation2.launch.py
+[0.792s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/simulation.launch.py
+[0.792s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/robot_state_publisher.launch.py
+[0.792s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models
+[0.792s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3
+[0.792s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes
+[0.792s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/lds.dae
+[0.792s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/waffle_pi_base.dae
+[0.792s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/r200.dae
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/burger_base.dae
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/tire.dae
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/waffle_base.dae
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/model.sdf
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/model.config
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/world_only.sdf
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/meshes
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/meshes/wall.dae
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/meshes/hexagon.dae
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/model.sdf
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/maps
+[0.793s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/maps/turtlebot3_world.pgm
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/maps/turtlebot3_world.yaml
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/params
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/params/burger.yaml
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/params/waffle.yaml
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/ament_index/resource_index/package_run_dependencies/turtlebot3
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/ament_index/resource_index/parent_prefix_path/turtlebot3
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.sh
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.dsv
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/path.sh
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/path.dsv
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.bash
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.sh
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.zsh
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.dsv
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/package.dsv
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/ament_index/resource_index/packages/turtlebot3
+[0.794s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config.cmake
+[0.795s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config-version.cmake
+[0.795s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/package.xml
+[0.795s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ju/turtlebotsim/build/turtlebot3
