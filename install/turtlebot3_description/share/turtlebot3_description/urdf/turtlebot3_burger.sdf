@@ -5,7 +5,7 @@
     
     <link name='base_link'>
       <inertial>
-        <pose>-0.00429 0 0.030734 0 -0 0</pose>
+        <pose>-0.00429 0 0.015 0 -0 0</pose>
         <mass>0.944735</mass>
         <inertia>
           <ixx>0.00717896</ixx>
@@ -49,6 +49,11 @@
             <uri>model://turtlebot3_description/meshes/bases/burger_base.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse> 0.145098039 0.156862745 0.164705882 1</diffuse>
+          <ambient> 0.145098039 0.156862745 0.164705882 1</ambient>
+          <specular>0.145098039 0.156862745 0.164705882 1</specular>
+        </material>        
       </visual>
       <visual name='base_footprint_fixed_joint_lump__base_scan_visual_1'>
         <pose>-0.032 0 0.182 0 -0 0</pose>
@@ -58,6 +63,11 @@
             <uri>model://turtlebot3_description/meshes/sensors/lds.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse> 0.145098039 0.156862745 0.164705882 1</diffuse>
+          <ambient> 0.145098039 0.156862745 0.164705882 1</ambient>
+          <specular>0.145098039 0.156862745 0.164705882 1</specular>
+        </material>
       </visual>
     </link>
 
@@ -125,78 +135,6 @@
       <child>imu_link</child>
     </joint>
 
-    <link name="base_scan">
-      <inertial>
-        <pose>-0.052 0 0.111 0 0 0</pose>
-        <inertia>
-          <ixx>0.001</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.001</iyy>
-          <iyz>0</iyz>
-          <izz>0.001</izz>
-        </inertia>
-        <mass>0.114</mass>
-      </inertial>
-      <collision name="lidar_sensor_collision">
-        <pose>-0.052 0 0.111 0 0 0</pose>
-        <geometry>
-          <cylinder>
-            <radius>0.0508</radius>
-            <length>0.055</length>
-          </cylinder>
-        </geometry>
-      </collision>
-      <visual name="lidar_sensor_visual">
-        <pose>-0.064 0 0.121 0 0 0</pose>
-        <geometry>
-          <mesh>
-            <uri>model://turtlebot3_description/meshes/sensors/lds.stl</uri>
-            <scale>0.001 0.001 0.001</scale>
-          </mesh>
-        </geometry>
-        <material>
-          <diffuse> 0.145098039 0.156862745 0.164705882 1</diffuse>
-          <ambient> 0.145098039 0.156862745 0.164705882 1</ambient>
-          <specular>0.145098039 0.156862745 0.164705882 1</specular>
-        </material>
-      </visual>
-      <sensor name="gpu_lidar" type="gpu_lidar">
-        <pose>-0.064 0 0.121 0 0 0</pose>
-        <topic>scan</topic>
-        <ignition_frame_id>base_scan</ignition_frame_id>
-        <update_rate>5</update_rate>
-        <ray>
-          <scan>
-            <horizontal>
-              <samples>360</samples>
-              <resolution>1</resolution>
-              <min_angle>0</min_angle>
-              <max_angle>6.28</max_angle>
-            </horizontal>
-          </scan>
-          <range>
-            <min>0.120000</min>
-            <max>20.0</max>
-            <resolution>0.015000</resolution>
-          </range>
-          <noise>
-            <type>gaussian</type>
-            <mean>0.0</mean>
-            <stddev>0.01</stddev>
-          </noise>
-        </ray>
-        <always_on>true</always_on>
-        <visualize>1</visualize>
-      </sensor>
-    </link>
-
-    <joint name="lidar_joint" type="fixed">
-      <pose>-0.064 0 0.121 0 0 0</pose>
-      <parent>base_link</parent>
-      <child>base_scan</child>
-    </joint>
-
     <link name='wheel_left_link'>
       <pose relative_to='wheel_left_joint'>0 0 0 0 -0 0</pose>
       <inertial>
@@ -213,6 +151,14 @@
       </inertial>
       <collision name='wheel_left_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
         <geometry>
           <cylinder>
             <length>0.018</length>
@@ -228,6 +174,11 @@
             <uri>model://turtlebot3_description/meshes/wheels/left_tire.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse> 0.145098039 0.156862745 0.164705882 1</diffuse>
+          <ambient> 0.145098039 0.156862745 0.164705882 1</ambient>
+          <specular>0.145098039 0.156862745 0.164705882 1</specular>
+        </material>
       </visual>
     </link>
 
@@ -244,13 +195,15 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
+          <damping>0.7</damping>
+          <friction>0.0</friction>
         </dynamics>
       </axis>
     </joint>
 
     <joint name='wheel_right_joint' type='revolute'>
       <pose relative_to='base_footprint'>0 -0.08 0.033 -1.57 0 0</pose>
-      <parent>base_footprint</parent>
+      <parent>base_link</parent>
       <child>wheel_right_link</child>
       <axis>
         <xyz>0 0 1</xyz>
@@ -261,6 +214,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
+          <damping>0.7</damping>
+          <friction>0.0</friction>
         </dynamics>
       </axis>
     </joint>
@@ -281,6 +236,14 @@
       </inertial>
       <collision name='wheel_right_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
         <geometry>
           <cylinder>
             <length>0.018</length>
@@ -296,20 +259,25 @@
             <uri>model://turtlebot3_description/meshes/wheels/right_tire.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <diffuse> 0.145098039 0.156862745 0.164705882 1</diffuse>
+          <ambient> 0.145098039 0.156862745 0.164705882 1</ambient>
+          <specular>0.145098039 0.156862745 0.164705882 1</specular>
+        </material>
       </visual>
     </link>
     
     <link name='caster_back_right_link'>
       <pose>-0.177 -0.064 -0.004 -1.57 0 0</pose>
       <inertial>
-        <mass>0.001</mass>
+        <mass>0.05</mass>
         <inertia>
-          <ixx>0.00001</ixx>
+          <ixx>0.1e-4</ixx>
           <ixy>0.000</ixy>
           <ixz>0.000</ixz>
-          <iyy>0.00001</iyy>
+          <iyy>0.1e-4</iyy>
           <iyz>0.000</iyz>
-          <izz>0.00001</izz>
+          <izz>0.1e-4</izz>
         </inertia>
       </inertial>
       <collision name='collision'>
@@ -333,22 +301,35 @@
       </collision>
     </link>
 
-    <joint name='caster_back_right_joint' type='ball'>
+    <joint name='caster_back_right_joint' type='continuous'>
       <parent>base_link</parent>
       <child>caster_back_right_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+          <effort>1</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.7</damping>
+          <friction>0.1</friction>
+        </dynamics>
+      </axis>
     </joint>
 
     <link name='caster_back_left_link'>
       <pose>-0.177 0.064 -0.004 -1.57 0 0</pose>
       <inertial>
-        <mass>0.001</mass>
+        <mass>0.05</mass>
         <inertia>
-          <ixx>0.00001</ixx>
+          <ixx>1e-4</ixx>
           <ixy>0.000</ixy>
           <ixz>0.000</ixz>
-          <iyy>0.00001</iyy>
+          <iyy>1e-4</iyy>
           <iyz>0.000</iyz>
-          <izz>0.00001</izz>
+          <izz>1e-4</izz>
         </inertia>
       </inertial>
       <collision name='collision'>
@@ -372,9 +353,22 @@
       </collision>
     </link>
 
-    <joint name='caster_back_left_joint' type='ball'>
+    <joint name='caster_back_left_joint' type='continuous'>
       <parent>base_link</parent>
       <child>caster_back_left_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+          <effort>1</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.7</damping>
+          <friction>0.1</friction>
+        </dynamics>
+      </axis>
     </joint>
 
     <link name="camera_link"/>

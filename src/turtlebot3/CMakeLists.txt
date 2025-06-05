@@ -7,6 +7,15 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(nav2_msgs REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(yaml-cpp REQUIRED)
+
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -14,6 +23,41 @@ find_package(ament_cmake REQUIRED)
 install(DIRECTORY launch models maps params
   DESTINATION share/${PROJECT_NAME}
 )
+
+install(PROGRAMS
+  nodes/map_to_stl_node.cpp
+  nodes/map_to_world_node.cpp
+  nodes/goal_pose_to_nav2.cpp
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+add_executable(map_to_stl_node nodes/map_to_stl_node.cpp)
+# ament_target_dependencies(map_to_stl_node rclcpp nav_msgs)
+ament_target_dependencies(map_to_stl_node rclcpp
+  nav_msgs
+  yaml-cpp
+  )
+target_link_libraries(map_to_stl_node ${OpenCV_LIBS} yaml-cpp)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+
+
+add_executable(map_to_world_node nodes/map_to_world_node.cpp)
+ament_target_dependencies(map_to_world_node rclcpp)
+
+add_executable(goal_pose_to_nav2 nodes/goal_pose_to_nav2.cpp)
+ament_target_dependencies(goal_pose_to_nav2
+  rclcpp
+  rclcpp_action
+  geometry_msgs
+  nav2_msgs
+)
+install(TARGETS map_to_stl_node DESTINATION lib/${PROJECT_NAME})
+install(TARGETS map_to_world_node DESTINATION lib/${PROJECT_NAME})
+install(TARGETS goal_pose_to_nav2 DESTINATION lib/${PROJECT_NAME})
+
+set(CMAKE_CXX_STANDARD 17)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

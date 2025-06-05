@@ -1,0 +1,10 @@
+<sdf version="1.7">
+  <world name="default">
+    <include>
+      <uri>file:///usr/share/gazebo-11/models/sun/model.sdf</uri>
+    </include>
+    <include>
+      <uri>file:///usr/share/gazebo-11/models/ground_plane/model.sdf</uri>
+    </include>
+  </world>
+</sdf>

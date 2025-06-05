@@ -1,0 +1,126 @@
+[0.010s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
+[0.029s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.109s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.127s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.128s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.131s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.136s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.143s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.161s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.162s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.235s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.263s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.280s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.287s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.296s] -- Found nav2_msgs: 1.1.18 (/opt/ros/humble/share/nav2_msgs/cmake)
+[0.315s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.357s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.357s] -- Configured cppcheck include dirs: 
+[0.357s] -- Configured cppcheck exclude dirs and/or files: 
+[0.357s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.358s] -- Added test 'lint_cmake' to check CMake code style
+[0.358s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.359s] -- Added test 'uncrustify' to check C / C++ code style
+[0.359s] -- Configured uncrustify additional arguments: 
+[0.359s] -- Added test 'xmllint' to check XML markup files
+[0.359s] -- Configuring done
+[0.369s] -- Generating done
+[0.370s] -- Build files have been written to: /home/ju/turtlebotsim/build/turtlebot3
+[0.392s] [35m[1mConsolidate compiler generated dependencies of target map_to_stl_node[0m
+[0.392s] [35m[1mConsolidate compiler generated dependencies of target map_to_world_node[0m
+[0.392s] [35m[1mConsolidate compiler generated dependencies of target goal_pose_to_nav2[0m
+[0.402s] [ 16%] [32mBuilding CXX object CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o[0m
+[0.406s] [ 33%] [32mBuilding CXX object CMakeFiles/map_to_world_node.dir/nodes/map_to_world_node.cpp.o[0m
+[0.407s] [ 50%] [32mBuilding CXX object CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o[0m
+[2.047s] [ 66%] [32m[1mLinking CXX executable map_to_world_node[0m
+[2.129s] [ 66%] Built target map_to_world_node
+[3.192s] [ 83%] [32m[1mLinking CXX executable map_to_stl_node[0m
+[3.346s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: warning: relocation against `_ZTVN4YAML11InvalidNodeE' in read-only section `.text._ZN4YAML11InvalidNodeC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML11InvalidNodeC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]'
+[3.387s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::Exception::Exception(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[3.387s] map_to_stl_node.cpp:(.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x61): undefined reference to `vtable for YAML::Exception'
+[3.387s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::RepresentationException::RepresentationException(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[3.387s] map_to_stl_node.cpp:(.text._ZN4YAML23RepresentationExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML23RepresentationExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x32): undefined reference to `vtable for YAML::RepresentationException'
+[3.387s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::InvalidNode::InvalidNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[3.387s] map_to_stl_node.cpp:(.text._ZN4YAML11InvalidNodeC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML11InvalidNodeC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x71): undefined reference to `vtable for YAML::InvalidNode'
+[3.387s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::BadConversion::BadConversion(YAML::Mark const&)':
+[3.387s] map_to_stl_node.cpp:(.text._ZN4YAML13BadConversionC2ERKNS_4MarkE[_ZN4YAML13BadConversionC5ERKNS_4MarkE]+0x7c): undefined reference to `vtable for YAML::BadConversion'
+[3.387s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::memory_holder::create_node()':
+[3.387s] map_to_stl_node.cpp:(.text._ZN4YAML6detail13memory_holder11create_nodeEv[_ZN4YAML6detail13memory_holder11create_nodeEv]+0x20): undefined reference to `YAML::detail::memory::create_node()'
+[3.387s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::node_ref::mark_defined()':
+[3.387s] map_to_stl_node.cpp:(.text._ZN4YAML6detail8node_ref12mark_definedEv[_ZN4YAML6detail8node_ref12mark_definedEv]+0x20): undefined reference to `YAML::detail::node_data::mark_defined()'
+[3.387s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::node_ref::set_null()':
+[3.387s] map_to_stl_node.cpp:(.text._ZN4YAML6detail8node_ref8set_nullEv[_ZN4YAML6detail8node_ref8set_nullEv]+0x20): undefined reference to `YAML::detail::node_data::set_null()'
+[3.387s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::node_ref::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[3.387s] map_to_stl_node.cpp:(.text._ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x2e): undefined reference to `YAML::detail::node_data::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[3.387s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::Node::EnsureNodeExists() const':
+[3.387s] map_to_stl_node.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[3.387s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'
+[3.387s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::Node::Mark() const':
+[3.388s] map_to_stl_node.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'
+[3.388s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::Node::Type() const':
+[3.388s] map_to_stl_node.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'
+[3.388s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::Node::Scalar[abi:cxx11]() const':
+[3.388s] map_to_stl_node.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x44): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x4e): undefined reference to `typeinfo for YAML::InvalidNode'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x7d): undefined reference to `YAML::detail::node_data::empty_scalar[abi:cxx11]()'
+[3.388s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `MapToStlNode::generate_stl_from_yaml(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[3.388s] map_to_stl_node.cpp:(.text._ZN12MapToStlNode22generate_stl_from_yamlERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_[_ZN12MapToStlNode22generate_stl_from_yamlERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_]+0x4b): undefined reference to `YAML::LoadFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[3.388s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > YAML::Node::as<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >() const':
+[3.388s] map_to_stl_node.cpp:(.text._ZNK4YAML4Node2asINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEET_v[_ZNK4YAML4Node2asINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEET_v]+0x57): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZNK4YAML4Node2asINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEET_v[_ZNK4YAML4Node2asINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEET_v]+0x61): undefined reference to `typeinfo for YAML::InvalidNode'
+[3.388s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `double YAML::Node::as<double>() const':
+[3.388s] map_to_stl_node.cpp:(.text._ZNK4YAML4Node2asIdEET_v[_ZNK4YAML4Node2asIdEET_v]+0x53): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZNK4YAML4Node2asIdEET_v[_ZNK4YAML4Node2asIdEET_v]+0x5d): undefined reference to `typeinfo for YAML::InvalidNode'
+[3.388s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::TypedBadConversion<double>::~TypedBadConversion()':
+[3.388s] map_to_stl_node.cpp:(.text._ZN4YAML18TypedBadConversionIdED2Ev[_ZN4YAML18TypedBadConversionIdED5Ev]+0x26): undefined reference to `YAML::BadConversion::~BadConversion()'
+[3.388s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [6]>(char const (&) [6], std::shared_ptr<YAML::detail::memory_holder>)':
+[3.388s] map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd3): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x103): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10d): undefined reference to `typeinfo for YAML::BadSubscript'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1fb): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+[3.388s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [11]>(char const (&) [11], std::shared_ptr<YAML::detail::memory_holder>)':
+[3.388s] map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA11_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA11_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd3): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA11_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA11_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x103): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA11_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA11_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10d): undefined reference to `typeinfo for YAML::BadSubscript'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA11_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA11_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1fb): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+[3.388s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [7]>(char const (&) [7], std::shared_ptr<YAML::detail::memory_holder>)':
+[3.388s] map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd3): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x103): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+[3.388s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10d): undefined reference to `typeinfo for YAML::BadSubscript'
+[3.389s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1fb): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<int>(int const&, std::shared_ptr<YAML::detail::memory_holder>)':
+[3.389s] map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIiEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIiEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd3): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+[3.389s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIiEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIiEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x103): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+[3.389s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIiEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIiEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10d): undefined reference to `typeinfo for YAML::BadSubscript'
+[3.389s] /usr/bin/ld: map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data3getIiEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIiEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1fb): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [6]>(YAML::Mark const&, char const (&) [6])':
+[3.389s] map_to_stl_node.cpp:(.text._ZN4YAML12BadSubscriptC2IA6_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA6_cEERKNS_4MarkERKT_]+0x61): undefined reference to `vtable for YAML::BadSubscript'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [6]>(char const (&) [6], std::shared_ptr<YAML::detail::memory_holder>)':
+[3.389s] map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA6_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x69): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [11]>(YAML::Mark const&, char const (&) [11])':
+[3.389s] map_to_stl_node.cpp:(.text._ZN4YAML12BadSubscriptC2IA11_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA11_cEERKNS_4MarkERKT_]+0x61): undefined reference to `vtable for YAML::BadSubscript'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [11]>(char const (&) [11], std::shared_ptr<YAML::detail::memory_holder>)':
+[3.389s] map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA11_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA11_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x69): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [7]>(YAML::Mark const&, char const (&) [7])':
+[3.389s] map_to_stl_node.cpp:(.text._ZN4YAML12BadSubscriptC2IA7_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA7_cEERKNS_4MarkERKT_]+0x61): undefined reference to `vtable for YAML::BadSubscript'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [7]>(char const (&) [7], std::shared_ptr<YAML::detail::memory_holder>)':
+[3.389s] map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x69): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::BadSubscript::BadSubscript<int>(YAML::Mark const&, int const&)':
+[3.389s] map_to_stl_node.cpp:(.text._ZN4YAML12BadSubscriptC2IiEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IiEERKNS_4MarkERKT_]+0x66): undefined reference to `vtable for YAML::BadSubscript'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<int>(int const&, std::shared_ptr<YAML::detail::memory_holder>)':
+[3.389s] map_to_stl_node.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIiEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIiEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x69): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o: in function `YAML::TypedBadConversion<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~TypedBadConversion()':
+[3.389s] map_to_stl_node.cpp:(.text._ZN4YAML18TypedBadConversionINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev[_ZN4YAML18TypedBadConversionINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED5Ev]+0x26): undefined reference to `YAML::BadConversion::~BadConversion()'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionIdEE[_ZTIN4YAML18TypedBadConversionIdEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'
+[3.389s] /usr/bin/ld: CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE[_ZTIN4YAML18TypedBadConversionINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'
+[3.403s] /usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+[3.405s] collect2: error: ld returned 1 exit status
+[3.407s] gmake[2]: *** [CMakeFiles/map_to_stl_node.dir/build.make:205: map_to_stl_node] Error 1
+[3.407s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/map_to_stl_node.dir/all] Error 2
+[3.407s] gmake[1]: *** Waiting for unfinished jobs....
+[5.499s] [100%] [32m[1mLinking CXX executable goal_pose_to_nav2[0m
+[5.788s] [100%] Built target goal_pose_to_nav2
+[5.789s] gmake: *** [Makefile:146: all] Error 2
+[5.791s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20

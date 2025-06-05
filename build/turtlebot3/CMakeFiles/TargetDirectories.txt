@@ -1,5 +1,8 @@
 /home/ju/turtlebotsim/build/turtlebot3/CMakeFiles/uninstall.dir
 /home/ju/turtlebotsim/build/turtlebot3/CMakeFiles/turtlebot3_uninstall.dir
+/home/ju/turtlebotsim/build/turtlebot3/CMakeFiles/map_to_stl_node.dir
+/home/ju/turtlebotsim/build/turtlebot3/CMakeFiles/map_to_world_node.dir
+/home/ju/turtlebotsim/build/turtlebot3/CMakeFiles/goal_pose_to_nav2.dir
 /home/ju/turtlebotsim/build/turtlebot3/CMakeFiles/test.dir
 /home/ju/turtlebotsim/build/turtlebot3/CMakeFiles/edit_cache.dir
 /home/ju/turtlebotsim/build/turtlebot3/CMakeFiles/rebuild_cache.dir

@@ -38,34 +38,45 @@ def generate_launch_description():
                    '-name', TURTLEBOT3_MODEL,
                    '-file', sdf_path,
                    '-allow_renaming', 'true',
-                   '-x', '-2.0',
-                   '-y', '-0.5',
-                   '-z', '0.01'],
+                   '-x', '0',
+                   '-y', '0',
+                   '-z', '0'],
         )
     
-    # Spawn world
-    ignition_spawn_world = Node(
-        package='ros_ign_gazebo',
-        executable='create',
-        output='screen',
-        arguments=['-file', PathJoinSubstitution([
-                        get_package_share_directory('turtlebot3'),
-                        "models", "worlds", "model.sdf"]),
-                   '-allow_renaming', 'false'],
-        )
-    
-    world_only = os.path.join(get_package_share_directory('turtlebot3'), "models", "worlds", "world_only.sdf")
+    # # Spawn world
+    # ignition_spawn_world = Node(
+    #     package='ros_ign_gazebo',
+    #     executable='create',
+    #     output='screen',
+    #     arguments=['-file', PathJoinSubstitution([
+    #                     get_package_share_directory('turtlebot3'),
+    #                     "models", "worlds", "model.sdf"]),
+    #                '-allow_renaming', 'false'],
+    #     )
+
+    # # STL 생성 노드 실행 (map_to_stl_node.py 기반)
+    # map_to_stl_node = Node(
+    #     package='your_package_name',  # <<<< 여기를 너의 실제 패키지 이름으로 바꿔줘
+    #     executable='map_to_stl_node',
+    #     name='map_to_stl_node',
+    #     output='screen',
+    #     parameters=[{'export_path': '/home/ju/gazebo_map/map.stl'}]
+    # )
+
+    # world_only = os.path.join(get_package_share_directory('turtlebot3'), "models", "worlds", "world_only.sdf")
+    world_only = '/home/ju/turtlebotsim/src/turtlebot3/models/worlds/auto_generated_world.sdf'
+
 
     return LaunchDescription([
         ign_resource_path,
         ignition_spawn_entity,
-        ignition_spawn_world,
+        # ignition_spawn_world,
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 [os.path.join(get_package_share_directory('ros_ign_gazebo'),
                               'launch', 'ign_gazebo.launch.py')]),
             launch_arguments=[('ign_args', [' -r -v 3 ' +
-                              world_only
+                              world_only  
                              ])]),
                              
         DeclareLaunchArgument(
@@ -73,10 +84,17 @@ def generate_launch_description():
             default_value=use_sim_time,
             description='If true, use simulated clock'),
 
+        # DeclareLaunchArgument(
+        #     'world_name',
+        #     default_value=world_name,
+        #     description='World name'),
+
         DeclareLaunchArgument(
-            'world_name',
-            default_value=world_name,
-            description='World name'),
+            'world',
+            default_value='/home/ju/turtlebotsim/src/turtlebot3/models/worlds/auto_generated_world.sdf',
+            description='World file to load'
+        ),
+
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([launch_file_dir, '/ros_ign_bridge.launch.py']),
@@ -88,8 +106,15 @@ def generate_launch_description():
             launch_arguments={'use_sim_time': use_sim_time}.items(),
         ),
 
+        # IncludeLaunchDescription(
+        #     PythonLaunchDescriptionSource([launch_file_dir, '/navigation2.launch.py']),
+        #     launch_arguments={'use_sim_time': use_sim_time}.items(),
+        # ),
+
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([launch_file_dir, '/navigation2.launch.py']),
+            PythonLaunchDescriptionSource([launch_file_dir, '/map_to_world.launch.py']),
             launch_arguments={'use_sim_time': use_sim_time}.items(),
         ),
+
+
     ])

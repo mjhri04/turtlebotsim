@@ -1,1 +1,1 @@
-robot_state_publisher;ros_ign_bridge;ros_ign_gazebo;tf2_ros;ament_lint_auto;ament_lint_common
+robot_state_publisher;ros_ign_bridge;ros_ign_gazebo;tf2_ros;rclpy;nav_msgs;std_msgs;python3-numpy;geometry_msgs;nav2_msgs;rclcpp_action;ament_lint_auto;ament_lint_common
