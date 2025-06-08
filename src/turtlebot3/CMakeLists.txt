@@ -14,6 +14,8 @@ find_package(nav_msgs REQUIRED)
 find_package(nav2_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(yaml-cpp REQUIRED)
+find_package(sensor_msgs REQUIRED)  
+find_package(std_msgs REQUIRED)
 
 
 # uncomment the following section in order to fill in
@@ -28,6 +30,7 @@ install(PROGRAMS
   nodes/map_to_stl_node.cpp
   nodes/map_to_world_node.cpp
   nodes/goal_pose_to_nav2.cpp
+  nodes/map_to_stl_topic.cpp
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -52,10 +55,22 @@ ament_target_dependencies(goal_pose_to_nav2
   geometry_msgs
   nav2_msgs
 )
+
+add_executable(map_to_stl_topic nodes/map_to_stl_topic.cpp)
+ament_target_dependencies(map_to_stl_topic 
+  rclcpp 
+  sensor_msgs
+  std_msgs
+  nav_msgs
+)
+
+install(TARGETS map_to_stl_topic
+  DESTINATION lib/${PROJECT_NAME})
+
 install(TARGETS map_to_stl_node DESTINATION lib/${PROJECT_NAME})
 install(TARGETS map_to_world_node DESTINATION lib/${PROJECT_NAME})
 install(TARGETS goal_pose_to_nav2 DESTINATION lib/${PROJECT_NAME})
-
+install(TARGETS map_to_stl_topic DESTINATION lib/${PROJECT_NAME})
 set(CMAKE_CXX_STANDARD 17)
 
 
