@@ -1,0 +1,18 @@
+[0.009s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target map_to_stl_topic[0m
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target cmd_vel_halver[0m
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target goal_pose_to_nav2[0m
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target map_to_world_node[0m
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target map_to_stl_node[0m
+[0.043s] [ 40%] Built target map_to_stl_topic
+[0.043s] [ 40%] Built target cmd_vel_halver
+[0.048s] [ 50%] [32m[1mLinking CXX executable goal_pose_to_nav2[0m
+[0.048s] [ 70%] Built target map_to_world_node
+[0.052s] [ 90%] Built target map_to_stl_node
+[0.189s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.189s] (.text+0x1b): undefined reference to `main'
+[0.192s] collect2: error: ld returned 1 exit status
+[0.194s] gmake[2]: *** [CMakeFiles/goal_pose_to_nav2.dir/build.make:214: goal_pose_to_nav2] Error 1
+[0.194s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/goal_pose_to_nav2.dir/all] Error 2
+[0.194s] gmake: *** [Makefile:146: all] Error 2
+[0.196s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20

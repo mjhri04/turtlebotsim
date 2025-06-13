@@ -1,0 +1,76 @@
+[0.008s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
+[0.045s] [ 30%] [32mBuilding CXX object CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o[0m
+[0.045s] [ 30%] Built target map_to_stl_node
+[0.045s] [ 50%] Built target map_to_stl_topic
+[0.049s] [ 70%] Built target cmd_vel_halver
+[0.049s] [ 90%] Built target map_to_world_node
+[4.416s] [100%] [32m[1mLinking CXX executable goal_pose_to_nav2[0m
+[4.666s] [100%] Built target goal_pose_to_nav2
+[4.674s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
+[4.703s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ju/turtlebotsim/build/turtlebot3
+[4.707s] -- Install configuration: ""
+[4.707s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch
+[4.707s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/__pycache__
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/__pycache__/map_to_stl.launch.cpython-310.pyc
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/cmd_vel_halver.launch.py
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/ros_ign_bridge.launch.py
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/map_to_stl_topic.launch.py
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/goal_pose_to_nav2.launch.py
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/navigation2.launch.py
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/simulation.launch.py
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/robot_state_publisher.launch.py
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/map_to_stl.launch.py
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/map_to_world.launch.py
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/lds.dae
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/waffle_pi_base.dae
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/r200.dae
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/burger_base.dae
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/tire.dae
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/waffle_base.dae
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/model.sdf
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/model.config
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/empty_world.sdf
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/world_only.sdf
+[4.708s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/auto_generated_world.sdf
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/meshes
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/meshes/wall.dae
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/meshes/hexagon.dae
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/model.sdf
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/maps
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/maps/turtlebot3_world.pgm
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/maps/turtlebot3_world.yaml
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/params
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/params/burger.yaml
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/params/waffle.yaml
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_node.cpp
+[4.708s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_world_node.cpp
+[4.708s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/goal_pose_to_nav2.cpp
+[4.709s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_topic.cpp
+[4.709s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_topic
+[4.709s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/cmd_vel_halver
+[4.709s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_node
+[4.709s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_world_node
+[4.709s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/goal_pose_to_nav2
+[4.710s] -- Set runtime path of "/home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/goal_pose_to_nav2" to ""
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_topic
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/goal_pose_to_nav2
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/ament_index/resource_index/package_run_dependencies/turtlebot3
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/ament_index/resource_index/parent_prefix_path/turtlebot3
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.sh
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.dsv
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/path.sh
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/path.dsv
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.bash
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.sh
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.zsh
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.dsv
+[4.710s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/package.dsv
+[4.710s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/ament_index/resource_index/packages/turtlebot3
+[4.711s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config.cmake
+[4.711s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config-version.cmake
+[4.711s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/package.xml
+[4.712s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ju/turtlebotsim/build/turtlebot3

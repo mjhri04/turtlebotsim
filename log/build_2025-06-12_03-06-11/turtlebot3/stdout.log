@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target map_to_stl_topic[0m
+[35m[1mConsolidate compiler generated dependencies of target cmd_vel_halver[0m
+[35m[1mConsolidate compiler generated dependencies of target goal_pose_to_nav2[0m
+[35m[1mConsolidate compiler generated dependencies of target map_to_world_node[0m
+[35m[1mConsolidate compiler generated dependencies of target map_to_stl_node[0m
+[ 40%] Built target map_to_stl_topic
+[ 40%] Built target cmd_vel_halver
+[ 50%] [32m[1mLinking CXX executable goal_pose_to_nav2[0m
+[ 70%] Built target map_to_world_node
+[ 90%] Built target map_to_stl_node

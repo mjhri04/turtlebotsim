@@ -5,7 +5,7 @@
 class MapToWorldNode : public rclcpp::Node {
 public:
   MapToWorldNode() : Node("map_to_world_node") {
-    std::string stl_path = "/home/ju//map.stl";
+    std::string stl_path = "/home/ju/map.stl";
     std::string output_path = "/home/ju/turtlebotsim/src/turtlebot3/models/worlds/auto_generated_world.sdf";
 
     if (!std::filesystem::exists(stl_path)) {
@@ -25,7 +25,7 @@ public:
   <world name="empty">
     <physics name="1ms" type="ode">
       <max_step_size>0.001</max_step_size>
-      <real_time_update_rate>500</real_time_update_rate>
+      <real_time_update_rate>100</real_time_update_rate>
     </physics>
 
     <light type="directional" name="sun">
@@ -55,8 +55,8 @@ public:
           <surface>
             <friction>
               <ode>
-                <mu>1.0</mu>
-                <mu2>1.0</mu2>
+                <mu>100.0</mu>
+                <mu2>100.0</mu2>
               </ode>
             </friction>
           </surface>
@@ -77,7 +77,7 @@ public:
       </link>
     </model>
 
-    <model name="map_mesh">
+    <model name="sim_map_mesh">
     <pose>0 0 0 0 0 0</pose>
       <static>true</static>
       <link name="map_link">

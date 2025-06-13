@@ -1,2 +1,0 @@
-Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
-Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '2': /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20

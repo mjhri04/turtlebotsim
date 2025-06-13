@@ -1,0 +1,31 @@
+[0.008s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
+[0.037s] [35m[1mConsolidate compiler generated dependencies of target goal_pose_to_nav2[0m
+[0.042s] [ 20%] Built target map_to_stl_topic
+[0.044s] [ 40%] Built target map_to_stl_node
+[0.044s] [ 60%] Built target cmd_vel_halver
+[0.046s] [ 80%] Built target map_to_world_node
+[0.048s] [ 90%] [32mBuilding CXX object CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o[0m
+[1.293s] [01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:[m[K In constructor ‘[01m[KGoalMover::GoalMover()[m[K’:
+[1.293s] [01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:202:34:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::Duration::Duration()[m[K’ is private within this context
+[1.293s]   202 |   GoalMover() : Node("goal_mover"[01;31m[K)[m[K
+[1.293s]       |                                  [01;31m[K^[m[K
+[1.293s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[1.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[1.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[1.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.293s]                  from [01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:191[m[K:
+[1.293s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:151:3:[m[K [01;36m[Knote: [m[Kdeclared private here
+[1.293s]   151 |   [01;36m[KDuration[m[K() = default;
+[1.293s]       |   [01;36m[K^~~~~~~~[m[K
+[2.992s] gmake[2]: *** [CMakeFiles/goal_pose_to_nav2.dir/build.make:76: CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o] Error 1
+[2.992s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/goal_pose_to_nav2.dir/all] Error 2
+[2.992s] gmake: *** [Makefile:146: all] Error 2
+[2.994s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20

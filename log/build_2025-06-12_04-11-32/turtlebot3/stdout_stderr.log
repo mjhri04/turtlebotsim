@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target goal_pose_to_nav2[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o[0m
+[ 30%] Built target cmd_vel_halver
+[ 50%] Built target map_to_world_node
+[ 70%] Built target map_to_stl_node
+[ 90%] Built target map_to_stl_topic
+[01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:[m[K In member function ‘[01m[Kvoid GoalMover::move_to_goal()[m[K’:
+[01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:86:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist_thresh[m[K’ was not declared in this scope
+   86 |     if (dist < [01;31m[Kdist_thresh[m[K && std::abs(yaw_error) < yaw_thresh) {
+      |                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:86:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_thresh[m[K’ was not declared in this scope
+   86 |     if (dist < dist_thresh && std::abs(yaw_error) < [01;31m[Kyaw_thresh[m[K) {
+      |                                                     [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/goal_pose_to_nav2.dir/build.make:76: CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/goal_pose_to_nav2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

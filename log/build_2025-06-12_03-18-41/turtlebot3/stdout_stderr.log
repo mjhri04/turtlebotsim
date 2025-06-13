@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target goal_pose_to_nav2[0m
+[ 20%] Built target cmd_vel_halver
+[ 40%] Built target map_to_world_node
+[ 60%] Built target map_to_stl_node
+[ 80%] Built target map_to_stl_topic
+[ 90%] [32mBuilding CXX object CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o[0m
+[01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:[m[K In member function ‘[01m[Kvoid GoalMover::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:66:35:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst std::_Swallow_assign[m[K’ to ‘[01m[Ktf2Scalar&[m[K’ {aka ‘[01m[Kdouble&[m[K’}
+   66 |     tf2::Matrix3x3(q).getRPY([01;31m[Kstd::ignore[m[K, std::ignore, robot_yaw_);
+      |                              [01;31m[K~~~~~^~~~~~[m[K
+      |                                   [01;31m[K|[m[K
+      |                                   [01;31m[Kconst std::_Swallow_assign[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h:19[m[K,
+                 from [01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:359:32:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid tf2::Matrix3x3::getRPY(tf2Scalar&, tf2Scalar&, tf2Scalar&, unsigned int) const[m[K’
+  359 |         void getRPY([01;36m[Ktf2Scalar& roll[m[K, tf2Scalar& pitch, tf2Scalar& yaw, unsigned int solution_number = 1) const
+      |                     [01;36m[K~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/goal_pose_to_nav2.dir/build.make:76: CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/goal_pose_to_nav2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

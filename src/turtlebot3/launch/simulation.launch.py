@@ -101,10 +101,10 @@ def generate_launch_description():
             launch_arguments={'use_sim_time': use_sim_time}.items(),
         ),
 
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([launch_file_dir, '/robot_state_publisher.launch.py']),
-            launch_arguments={'use_sim_time': use_sim_time}.items(),
-        ),
+        # IncludeLaunchDescription(
+        #     PythonLaunchDescriptionSource([launch_file_dir, '/robot_state_publisher.launch.py']),
+        #     launch_arguments={'use_sim_time': use_sim_time}.items(),
+        # ),
 
         # IncludeLaunchDescription(
         #     PythonLaunchDescriptionSource([launch_file_dir, '/navigation2.launch.py']),
@@ -113,6 +113,16 @@ def generate_launch_description():
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([launch_file_dir, '/map_to_world.launch.py']),
+            launch_arguments={'use_sim_time': use_sim_time}.items(),
+        ),
+
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource([launch_file_dir, '/cmd_vel_halver.launch.py']),
+            launch_arguments={'use_sim_time': use_sim_time}.items(),
+        ),
+
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource([launch_file_dir, '/goal_pose_to_nav2.launch.py']),
             launch_arguments={'use_sim_time': use_sim_time}.items(),
         ),
 

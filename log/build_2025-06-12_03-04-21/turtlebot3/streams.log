@@ -1,0 +1,79 @@
+[0.006s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ju/turtlebotsim/src/turtlebot3 -DCMAKE_INSTALL_PREFIX=/home/ju/turtlebotsim/install/turtlebot3
+[0.045s] -- The C compiler identification is GNU 11.4.0
+[0.079s] -- The CXX compiler identification is GNU 11.4.0
+[0.083s] -- Detecting C compiler ABI info
+[0.130s] -- Detecting C compiler ABI info - done
+[0.134s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.134s] -- Detecting C compile features
+[0.134s] -- Detecting C compile features - done
+[0.136s] -- Detecting CXX compiler ABI info
+[0.185s] -- Detecting CXX compiler ABI info - done
+[0.189s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.189s] -- Detecting CXX compile features
+[0.190s] -- Detecting CXX compile features - done
+[0.191s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.284s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.345s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.369s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.372s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.376s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.382s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.391s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.415s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.416s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.472s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.495s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.525s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.532s] -- Looking for pthread.h
+[0.583s] -- Looking for pthread.h - found
+[0.583s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.631s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.632s] -- Found Threads: TRUE  
+[0.659s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.678s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.685s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.695s] -- Found nav2_msgs: 1.1.18 (/opt/ros/humble/share/nav2_msgs/cmake)
+[0.711s] -- Found OpenCV: /usr (found version "4.5.4") 
+[0.713s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.723s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.729s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.737s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.738s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.738s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.773s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.817s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.818s] -- Configured cppcheck include dirs: 
+[0.818s] -- Configured cppcheck exclude dirs and/or files: 
+[0.818s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.818s] -- Added test 'lint_cmake' to check CMake code style
+[0.818s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.819s] -- Added test 'uncrustify' to check C / C++ code style
+[0.819s] -- Configured uncrustify additional arguments: 
+[0.820s] -- Added test 'xmllint' to check XML markup files
+[0.820s] -- Configuring done
+[0.834s] -- Generating done
+[0.835s] -- Build files have been written to: /home/ju/turtlebotsim/build/turtlebot3
+[0.843s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ju/turtlebotsim/src/turtlebot3 -DCMAKE_INSTALL_PREFIX=/home/ju/turtlebotsim/install/turtlebot3
+[0.844s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
+[0.879s] [ 20%] [32mBuilding CXX object CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o[0m
+[0.879s] [ 20%] [32mBuilding CXX object CMakeFiles/map_to_stl_topic.dir/nodes/map_to_stl_topic.cpp.o[0m
+[0.880s] [ 30%] [32mBuilding CXX object CMakeFiles/cmd_vel_halver.dir/nodes/cmd_vel_halver.cpp.o[0m
+[0.880s] [ 40%] [32mBuilding CXX object CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o[0m
+[0.881s] [ 50%] [32mBuilding CXX object CMakeFiles/map_to_world_node.dir/nodes/map_to_world_node.cpp.o[0m
+[2.489s] [ 60%] [32m[1mLinking CXX executable map_to_world_node[0m
+[2.553s] [ 60%] Built target map_to_world_node
+[3.647s] [ 70%] [32m[1mLinking CXX executable map_to_stl_node[0m
+[3.926s] [ 70%] Built target map_to_stl_node
+[3.938s] [ 80%] [32m[1mLinking CXX executable goal_pose_to_nav2[0m
+[4.066s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[4.066s] (.text+0x1b): undefined reference to `main'
+[4.069s] collect2: error: ld returned 1 exit status
+[4.070s] gmake[2]: *** [CMakeFiles/goal_pose_to_nav2.dir/build.make:214: goal_pose_to_nav2] Error 1
+[4.070s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/goal_pose_to_nav2.dir/all] Error 2
+[4.070s] gmake[1]: *** Waiting for unfinished jobs....
+[5.328s] [ 90%] [32m[1mLinking CXX executable cmd_vel_halver[0m
+[5.386s] [100%] [32m[1mLinking CXX executable map_to_stl_topic[0m
+[5.560s] [100%] Built target cmd_vel_halver
+[5.614s] [100%] Built target map_to_stl_topic
+[5.615s] gmake: *** [Makefile:146: all] Error 2
+[5.616s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20

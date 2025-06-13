@@ -1,3 +1,0 @@
-[ 33%] Built target map_to_world_node
-[ 50%] [32mBuilding CXX object CMakeFiles/map_to_stl_node.dir/nodes/map_to_stl_node.cpp.o[0m
-[ 83%] Built target goal_pose_to_nav2

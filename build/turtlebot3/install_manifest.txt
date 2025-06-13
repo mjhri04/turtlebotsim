@@ -1,4 +1,5 @@
 /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/__pycache__/map_to_stl.launch.cpython-310.pyc
+/home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/cmd_vel_halver.launch.py
 /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/ros_ign_bridge.launch.py
 /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/map_to_stl_topic.launch.py
 /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/goal_pose_to_nav2.launch.py
@@ -30,10 +31,12 @@
 /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/goal_pose_to_nav2.cpp
 /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_topic.cpp
 /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_topic
+/home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/cmd_vel_halver
 /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_node
 /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_world_node
 /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/goal_pose_to_nav2
 /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_topic
+/home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/goal_pose_to_nav2
 /home/ju/turtlebotsim/install/turtlebot3/share/ament_index/resource_index/package_run_dependencies/turtlebot3
 /home/ju/turtlebotsim/install/turtlebot3/share/ament_index/resource_index/parent_prefix_path/turtlebot3
 /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.sh

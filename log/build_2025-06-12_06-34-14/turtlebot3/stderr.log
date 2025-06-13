@@ -1,0 +1,9 @@
+[01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:252:15:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint GoalMover::tick_[m[K’
+  252 |   int tick_ = [01;31m[K0[m[K;
+      |               [01;31m[K^[m[K
+[01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:243:7:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint GoalMover::tick_[m[K’
+  243 |   int [01;36m[Ktick_[m[K;
+      |       [01;36m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/goal_pose_to_nav2.dir/build.make:76: CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/goal_pose_to_nav2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

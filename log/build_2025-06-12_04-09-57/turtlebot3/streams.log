@@ -1,0 +1,101 @@
+[0.009s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target goal_pose_to_nav2[0m
+[0.046s] [ 40%] Built target cmd_vel_halver
+[0.046s] [ 40%] Built target map_to_world_node
+[0.050s] [ 60%] Built target map_to_stl_topic
+[0.052s] [ 70%] [32mBuilding CXX object CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o[0m
+[0.053s] [ 90%] Built target map_to_stl_node
+[1.339s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.339s]                  from [01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:1[m[K:
+[1.339s] [01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:[m[K In member function ‘[01m[Kvoid GoalMover::move_to_goal()[m[K’:
+[1.339s] [01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:90:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[1.339s]    90 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"%d"[m[K, [32m[Kyaw_error[m[K);
+[1.339s]       |                                         [01;35m[K^~~~[m[K  [32m[K~~~~~~~~~[m[K
+[1.339s]       |                                               [32m[K|[m[K
+[1.339s]       |                                               [32m[Kdouble[m[K
+[1.339s] [01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:90:43:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[1.339s]    90 |         RCLCPP_INFO(this->get_logger(), "[01;36m[K%d[m[K", yaw_error);
+[1.339s]       |                                          [01;36m[K~^[m[K
+[1.339s]       |                                           [01;36m[K|[m[K
+[1.339s]       |                                           [01;36m[Kint[m[K
+[1.339s]       |                                          [32m[K%f[m[K
+[5.856s] [100%] [32m[1mLinking CXX executable goal_pose_to_nav2[0m
+[6.192s] [100%] Built target goal_pose_to_nav2
+[6.203s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
+[6.233s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ju/turtlebotsim/build/turtlebot3
+[6.238s] -- Install configuration: ""
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/__pycache__
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/__pycache__/map_to_stl.launch.cpython-310.pyc
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/cmd_vel_halver.launch.py
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/ros_ign_bridge.launch.py
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/map_to_stl_topic.launch.py
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/goal_pose_to_nav2.launch.py
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/navigation2.launch.py
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/simulation.launch.py
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/robot_state_publisher.launch.py
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/map_to_stl.launch.py
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/launch/map_to_world.launch.py
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/lds.dae
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/waffle_pi_base.dae
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/r200.dae
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/burger_base.dae
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/tire.dae
+[6.238s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/waffle_base.dae
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/model.sdf
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/turtlebot3/model.config
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/empty_world.sdf
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/world_only.sdf
+[6.239s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/auto_generated_world.sdf
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/meshes
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/meshes/wall.dae
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/meshes/hexagon.dae
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/models/worlds/model.sdf
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/maps
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/maps/turtlebot3_world.pgm
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/maps/turtlebot3_world.yaml
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/params
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/params/burger.yaml
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/params/waffle.yaml
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_node.cpp
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_world_node.cpp
+[6.239s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/goal_pose_to_nav2.cpp
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_topic.cpp
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_topic
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/cmd_vel_halver
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_node
+[6.239s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_world_node
+[6.239s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/goal_pose_to_nav2
+[6.241s] -- Set runtime path of "/home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/goal_pose_to_nav2" to ""
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/map_to_stl_topic
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/lib/turtlebot3/goal_pose_to_nav2
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/ament_index/resource_index/package_run_dependencies/turtlebot3
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/ament_index/resource_index/parent_prefix_path/turtlebot3
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.sh
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.dsv
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/path.sh
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/environment/path.dsv
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.bash
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.sh
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.zsh
+[6.241s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/local_setup.dsv
+[6.242s] -- Installing: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/package.dsv
+[6.242s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/ament_index/resource_index/packages/turtlebot3
+[6.242s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config.cmake
+[6.242s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config-version.cmake
+[6.242s] -- Up-to-date: /home/ju/turtlebotsim/install/turtlebot3/share/turtlebot3/package.xml
+[6.243s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ju/turtlebotsim/build/turtlebot3

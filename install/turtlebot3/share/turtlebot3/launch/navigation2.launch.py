@@ -66,4 +66,12 @@ def generate_launch_description():
             arguments=['-d', rviz_config_dir],
             parameters=[{'use_sim_time': use_sim_time}],
             output='screen'),
+
+        Node(  
+            package='turtlebot3',  
+            executable='goal_pose_to_nav2',
+            name='goal_pose_to_nav2',
+            output='screen',
+            parameters=[{'use_sim_time': use_sim_time}]
+        ),
     ])

@@ -1,0 +1,17 @@
+[0.007s] Invoking command in '/home/ju/turtlebotsim/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20
+[0.037s] [35m[1mConsolidate compiler generated dependencies of target goal_pose_to_nav2[0m
+[0.044s] [ 20%] Built target map_to_world_node
+[0.045s] [ 30%] [32mBuilding CXX object CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o[0m
+[0.047s] [ 50%] Built target map_to_stl_node
+[0.049s] [ 70%] Built target cmd_vel_halver
+[0.049s] [ 90%] Built target map_to_stl_topic
+[1.239s] [01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:252:15:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint GoalMover::tick_[m[K’
+[1.239s]   252 |   int tick_ = [01;31m[K0[m[K;
+[1.239s]       |               [01;31m[K^[m[K
+[1.239s] [01m[K/home/ju/turtlebotsim/src/turtlebot3/nodes/goal_pose_to_nav2.cpp:243:7:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint GoalMover::tick_[m[K’
+[1.239s]   243 |   int [01;36m[Ktick_[m[K;
+[1.239s]       |       [01;36m[K^~~~~[m[K
+[2.556s] gmake[2]: *** [CMakeFiles/goal_pose_to_nav2.dir/build.make:76: CMakeFiles/goal_pose_to_nav2.dir/nodes/goal_pose_to_nav2.cpp.o] Error 1
+[2.556s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/goal_pose_to_nav2.dir/all] Error 2
+[2.556s] gmake: *** [Makefile:146: all] Error 2
+[2.558s] Invoked command in '/home/ju/turtlebotsim/build/turtlebot3' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ju/turtlebotsim/build/turtlebot3 -- -j20 -l20

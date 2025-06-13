@@ -224,6 +224,32 @@ map_to_world_node/fast:
 .PHONY : map_to_world_node/fast
 
 #=============================================================================
+# Target rules for targets named map_to_stl_topic
+
+# Build rule for target.
+map_to_stl_topic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_to_stl_topic
+.PHONY : map_to_stl_topic
+
+# fast build rule for target.
+map_to_stl_topic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_to_stl_topic.dir/build.make CMakeFiles/map_to_stl_topic.dir/build
+.PHONY : map_to_stl_topic/fast
+
+#=============================================================================
+# Target rules for targets named cmd_vel_halver
+
+# Build rule for target.
+cmd_vel_halver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmd_vel_halver
+.PHONY : cmd_vel_halver
+
+# fast build rule for target.
+cmd_vel_halver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_vel_halver.dir/build.make CMakeFiles/cmd_vel_halver.dir/build
+.PHONY : cmd_vel_halver/fast
+
+#=============================================================================
 # Target rules for targets named goal_pose_to_nav2
 
 # Build rule for target.
@@ -236,18 +262,29 @@ goal_pose_to_nav2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_pose_to_nav2.dir/build.make CMakeFiles/goal_pose_to_nav2.dir/build
 .PHONY : goal_pose_to_nav2/fast
 
-#=============================================================================
-# Target rules for targets named map_to_stl_topic
+nodes/cmd_vel_halver.o: nodes/cmd_vel_halver.cpp.o
+.PHONY : nodes/cmd_vel_halver.o
 
-# Build rule for target.
-map_to_stl_topic: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_to_stl_topic
-.PHONY : map_to_stl_topic
+# target to build an object file
+nodes/cmd_vel_halver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_vel_halver.dir/build.make CMakeFiles/cmd_vel_halver.dir/nodes/cmd_vel_halver.cpp.o
+.PHONY : nodes/cmd_vel_halver.cpp.o
 
-# fast build rule for target.
-map_to_stl_topic/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_to_stl_topic.dir/build.make CMakeFiles/map_to_stl_topic.dir/build
-.PHONY : map_to_stl_topic/fast
+nodes/cmd_vel_halver.i: nodes/cmd_vel_halver.cpp.i
+.PHONY : nodes/cmd_vel_halver.i
+
+# target to preprocess a source file
+nodes/cmd_vel_halver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_vel_halver.dir/build.make CMakeFiles/cmd_vel_halver.dir/nodes/cmd_vel_halver.cpp.i
+.PHONY : nodes/cmd_vel_halver.cpp.i
+
+nodes/cmd_vel_halver.s: nodes/cmd_vel_halver.cpp.s
+.PHONY : nodes/cmd_vel_halver.s
+
+# target to generate assembly for a file
+nodes/cmd_vel_halver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_vel_halver.dir/build.make CMakeFiles/cmd_vel_halver.dir/nodes/cmd_vel_halver.cpp.s
+.PHONY : nodes/cmd_vel_halver.cpp.s
 
 nodes/goal_pose_to_nav2.o: nodes/goal_pose_to_nav2.cpp.o
 .PHONY : nodes/goal_pose_to_nav2.o
@@ -360,10 +397,14 @@ help:
 	@echo "... test"
 	@echo "... turtlebot3_uninstall"
 	@echo "... uninstall"
+	@echo "... cmd_vel_halver"
 	@echo "... goal_pose_to_nav2"
 	@echo "... map_to_stl_node"
 	@echo "... map_to_stl_topic"
 	@echo "... map_to_world_node"
+	@echo "... nodes/cmd_vel_halver.o"
+	@echo "... nodes/cmd_vel_halver.i"
+	@echo "... nodes/cmd_vel_halver.s"
 	@echo "... nodes/goal_pose_to_nav2.o"
 	@echo "... nodes/goal_pose_to_nav2.i"
 	@echo "... nodes/goal_pose_to_nav2.s"
